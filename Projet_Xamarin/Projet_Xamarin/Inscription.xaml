@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projet_Xamarin.Inscription"
+             BackgroundColor="#ffe6ee">
+
+
+    <StackLayout>
+        <Label Text="Nom d'utilisateur:" />
+        <Entry x:Name="NomDutilisateur" Keyboard="Text" Placeholder="Nom d'utilisateur" Text=""/>
+        <Label Text="Mot de passe:" />
+        <Entry x:Name="mdp" IsPassword="True" Placeholder="Mot de passe" Text=""/>
+        <Label Text="Nom de l'enfant:" />
+        <Entry x:Name="NomEnfant" Keyboard="Text" Placeholder="Nom Enfant" Text=""/>
+        <Label Text="Prénom de l'enfant:" />
+        <Entry x:Name="PnomEnfant" Keyboard="Text" Placeholder="Prenom Enfant" Text=""/>
+        <Label Text="Classe de l'enfant:" />
+        <Entry x:Name="ClasseEnfant" Keyboard="Text" Placeholder="Classe Enfant" Text=""/>
+        <Button x:Name="InscriptionConnexion" Text="Inscription" Clicked="OnButtonInscriptionConnexionClicked"/>
+        <Button x:Name="Retour" Text="Retour" Clicked="OnButtonRetourClicked"/>
+        <Label Text="" TextColor="White" x:Name="erreur" Opacity="0" BackgroundColor="White" FontSize="15"/>
+    </StackLayout>
+
+</ContentPage>

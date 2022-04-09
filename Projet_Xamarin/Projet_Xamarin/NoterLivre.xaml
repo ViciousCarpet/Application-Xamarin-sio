@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projet_Xamarin.NoterLivre">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Noter un livre" FontSize="Large" HorizontalOptions="CenterAndExpand"/>
+            
+            <Entry x:Name="Note"
+                 HorizontalOptions="FillAndExpand"
+                 Keyboard="Numeric"
+                 Placeholder="Note" />
+
+            <Entry x:Name="Description" Text="" Keyboard="Text" Placeholder="Description" />
+
+            <Button x:Name="Noter" Text="Noter" Clicked="OnButtonNoterClicked"/>
+
+            <Button x:Name="retour" Text="Retour" Clicked="OnButtonReturnClicked"/>
+
+            <Button x:Name="voirCommentaires" Text="Voir les commentaires" Clicked="voirCommentaires_Clicked"/>
+
+            <Label Text="" Opacity="0" FontSize="16" x:Name="erreurNbCommentaires"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

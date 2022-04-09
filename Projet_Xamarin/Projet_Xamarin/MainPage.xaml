@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projet_Xamarin.MainPage"
+             BackgroundColor="#ffe6ee">
+
+    <StackLayout>
+        <Label Text="Nom d'utilisateur:" />
+        <Entry x:Name="NomDutilisateur" Keyboard="Text" Placeholder="Nom d'utilisateur" Text="test"/>
+        <Label Text="Mot de passe:" />
+        <Entry x:Name="mdp" IsPassword="True" Placeholder="Password" Text="test"/>
+        <Button x:Name="Connexion" Text="Connexion" Clicked="OnButtonConnexionClicked"/>
+        <Button x:Name="Inscription" Text="Inscription" Clicked="OnButtonInscriptionClicked"/>
+        <Label Text="" TextColor="White" x:Name="erreur" Opacity="0" BackgroundColor="White" FontSize="15"/>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projet_Xamarin.Commentaires">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+            <Button x:Name="retour" Text="Retour" Clicked="OnButtonReturnClicked" />
+            <ListView x:Name="CommentaireView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout BackgroundColor="#eee"
+                            Orientation="Vertical">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Commentaire}"
+                                    HorizontalOptions="Center"/>
+                                    <Label Text="{Binding Note}"
+                                    HorizontalOptions="End"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
